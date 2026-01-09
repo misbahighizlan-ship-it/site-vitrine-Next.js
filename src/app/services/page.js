@@ -2,26 +2,47 @@ export default function Services() {
   return (
     <div>
 
-      {/* HERO */}
-      <section className="bg-black text-white py-24">
-        <div className="max-w-6xl mx-auto px-6">
-          <h1 className="text-4xl font-bold text-yellow-500">
-            Des Services  <br/>
-            Sur Mesure
-          </h1>
+    
+      <section className="bg-black text-white py-16">
+  <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
 
-          <p className="text-gray-400 mt-6 max-w-xl">
-            De l'achat à l'entretien, nous vous accompagnons à chaque étape de 
-            votre expérience automobile avec des services premium et personnalisés.
-          </p>
+    
+    <div>
+      <span className="inline-block text-xs bg-yellow-500/20 text-yellow-500 px-3 py-1 rounded-full mb-3">
+        Nos Services
+      </span>
 
-          <button className="mt-8 bg-yellow-500 text-black px-6 py-3 rounded font-semibold">
-            Demander un devis
-          </button>
-        </div>
-      </section>
+      <h1 className="text-3xl md:text-4xl font-bold leading-tight">
+        Des Services <br />
+        <span className="text-yellow-500">Sur Mesure</span>
+      </h1>
 
-      {/* GAMME DE SERVICES */}
+      <p className="text-gray-400 mt-4 max-w-xl text-sm">
+        De l&apos;achat à l&apos;entretien, nous vous accompagnons à chaque étape de 
+        votre expérience automobile avec des services premium et personnalisés.
+      </p>
+
+      <button className="mt-6 bg-yellow-500 text-black px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-yellow-400 transition">
+        Demander un devis →
+      </button>
+    </div>
+
+    <div className="relative">
+      <div className="absolute inset-0 bg-yellow-500/10 blur-2xl rounded-xl"></div>
+
+      <img
+        src="/images/photo2.jpg"
+        alt="Service automobile"
+        className="relative rounded-xl shadow-xl max-h-[320px] object-cover mx-auto"
+      />
+    </div>
+
+  </div>
+</section>
+
+
+
+      
       <section className="py-24 bg-[#0f141a] text-white">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold mb-14">
@@ -53,7 +74,7 @@ export default function Services() {
         </div>
       </section>
 
-      {/* PROCESSUS */}
+      
       <section className="py-24 bg-black text-white">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-3xl font-bold mb-10">
@@ -69,7 +90,7 @@ export default function Services() {
         </div>
       </section>
 
-      {/* CTA */}
+      
       <section className="py-24 bg-[#0f141a] text-center text-white">
         <h2 className="text-3xl font-bold">
           Besoin d’un service personnalisé ?
@@ -83,3 +104,4 @@ export default function Services() {
     </div>
   );
 }
+

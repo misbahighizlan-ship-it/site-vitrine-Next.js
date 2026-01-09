@@ -2,19 +2,29 @@ export default function Home() {
   return (
     <div className="bg-[#0b0f14] text-white">
 
-      {/* HERO */}
-      <section className="py-28 text-center">
-        <h1 className="text-4xl md:text-5xl font-bold">
-          Pourquoi Choisir <span className="text-yellow-500">NextVibe</span>
-        </h1>
+    
+      <section
+  className="relative min-h-[90vh] bg-cover bg-center flex items-center"
+  style={{ backgroundImage: "url('/images/photo1.gif')" }}
+>
+  {/* overlay */}
+  <div className="absolute inset-0 bg-black/70"></div>
 
-        <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
-          Une expertise reconnue et un service client
-           d'exception pour vous accompagner dans votre projet automobile.
-        </p>
-      </section>
+  
+  <div className="relative z-10 max-w-6xl mx-auto px-6">
+    <h1 className="text-4xl md:text-5xl font-bold">
+      Pourquoi Choisir <span className="text-yellow-500">NextVibe</span>
+    </h1>
 
-      {/* CARDS */}
+    <p className="text-gray-300 mt-4 max-w-2xl">
+      Une expertise reconnue et un service client
+      d&apos;exception pour vous accompagner dans votre projet automobile.
+    </p>
+  </div>
+</section>
+
+
+     
       <section className="max-w-6xl mx-auto px-6">
         <div className="grid gap-8 md:grid-cols-4">
           
@@ -47,7 +57,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* STATS */}
+      
       <section className="py-24">
         <div className="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 text-center gap-12">
           
@@ -74,7 +84,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA */}
+      
       <section className="py-24 bg-gradient-to-t from-black to-[#0b0f14] text-center">
         <h2 className="text-3xl font-bold">
           Prêt à Lancer Votre Projet ?

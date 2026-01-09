@@ -55,7 +55,7 @@ export default function ContactPage() {
           ))}
         </div>
 
-        {/* FORM */}
+       
         <div className="md:col-span-2 bg-[#121826] p-8 rounded-xl border border-[#1f2437]">
           <h2 className="text-2xl font-semibold mb-6">
             Envoyez-nous un message
@@ -82,9 +82,12 @@ export default function ContactPage() {
                 className="input"
               />
               <select className="input">
-                <option>Développement web</option>
-                <option>Design UI/UX</option>
-                <option>Application mobile</option>
+                <option>Sélectionnez un sujet</option>
+                <option>Achat de véhicule</option>
+                <option>Reprise automobile</option>
+                <option>Entretien & Révision</option>
+                <option>Financement</option>
+                <option>Autre demande</option>
               </select>
             </div>
 
@@ -103,7 +106,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* ===== MAP ===== */}
+      
       <section className="max-w-6xl mx-auto px-6 py-20">
         <h2 className="text-2xl font-semibold text-center mb-6">
           Nous Trouver
